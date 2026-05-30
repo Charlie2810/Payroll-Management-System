@@ -8,8 +8,8 @@
   <title>Admin | Employee's Payroll Management System</title>
  	
 
-<?php include('./header.php'); ?>
-<?php include('./db_connect.php'); ?>
+<?php include __DIR__.'/includes/header.php'; ?>
+<?php include __DIR__.'/includes/db_connect.php'; ?>
 <?php 
 session_start();
 if(isset($_SESSION['login_id']))

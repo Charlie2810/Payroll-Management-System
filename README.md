@@ -55,16 +55,22 @@ If no user exists yet, create an administrator account using the `users` table o
 - Ensure the database name in `db_connect.php` matches the created database.
 - The main backend logic is handled in `admin_class.php`, and AJAX actions are dispatched through `ajax.php`.
 
+## Project Structure
+
+- `includes/` — shared backend logic and layout fragments (`admin_class.php`, `db_connect.php`, `header.php`, `navbar.php`, `topbar.php`)
+- `pages/` — application page views and modal content files
+- Root files: `index.php`, `login.php`, `ajax.php`, `README.md`
+
 ## Main Pages
 
 - `login.php` — login screen
 - `index.php` — main dashboard after login
-- `employee.php` — manage employees
-- `attendance.php` — manage attendance logs
-- `allowances.php` — manage allowance types
-- `deductions.php` — manage deduction types
-- `manage_payroll.php` — payroll creation and processing
-- `manage_user.php` — user administration
+- `pages/employee.php` — manage employees
+- `pages/attendance.php` — manage attendance logs
+- `pages/allowances.php` — manage allowance types
+- `pages/deductions.php` — manage deduction types
+- `pages/manage_payroll.php` — payroll creation and processing
+- `pages/manage_user.php` — user administration
 
 ## License
 
